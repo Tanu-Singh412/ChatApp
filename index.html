@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Chat App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+<div class="top-bar">
+  <div class="logo">💬 ChatApp</div>
+</div>
+
+    <div class="chat-container">
+      <aside class="sidebar" id="sidebar">
+        <h2>Chats</h2>
+        <ul class="chat-list">
+          <li class="chat-item active">
+            <div class="avatar">AS</div>
+            <div class="chat-info">
+              <h4>Abhinav Singh</h4>
+              <p>I've sent you the latest project f...</p>
+            </div>
+            <div class="chat-time">12:45 PM</div>
+          </li>
+        </ul>
+      </aside>
+
+      <main class="chat-main">
+        <div class="chat-header">
+          <div class="avatar large">AS</div>
+          <div class="chat-title">
+            <h3>Abhinav Singh</h3>
+            <span class="status online">Online</span>
+          </div>
+        </div>
+
+        <div class="chat-messages" id="chatMessages"></div>
+
+        <div class="typing-indicator" id="typingIndicator">Bot is typing...</div>
+
+        <div class="chat-input">
+          <textarea id="chatInput" rows="1" placeholder="Type a message..."></textarea>
+          <button id="sendBtn">
+            <span>&#10148;</span>
+          </button>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
